@@ -1,6 +1,7 @@
 on whisper.cpp
-./build-xcframework.sh
 
+./build-xcframework.sh
+sudo cmake --install build --config Release
 
 copy the framework
 ![image](https://github.com/user-attachments/assets/a76a1fd8-7bd2-4287-8f8d-a2c6010198ed)
