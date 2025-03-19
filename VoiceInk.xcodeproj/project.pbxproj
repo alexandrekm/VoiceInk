@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422B44FD2D8A518600947F25 /* whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422B44FA2D8A496B00947F25 /* whisper.framework */; };
+		422B44FE2D8A518600947F25 /* whisper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 422B44FA2D8A496B00947F25 /* whisper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E19E53B02D36D8120067F3D4 /* libggml.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E19E53A72D36D7EF0067F3D4 /* libggml.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E19E53B12D36D8200067F3D4 /* libggml-base.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E19E53A82D36D7EF0067F3D4 /* libggml-base.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E19E53B22D36D82F0067F3D4 /* libwhisper.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = E19E53AD2D36D7EF0067F3D4 /* libwhisper.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -16,7 +18,6 @@
 		E1A261122CC143AC00B233D1 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = E1A261112CC143AC00B233D1 /* KeyboardShortcuts */; };
 		E1ADD45A2CC5352A00303ECB /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E1ADD4592CC5352A00303ECB /* LaunchAtLogin */; };
 		E1ADD45F2CC544F100303ECB /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = E1ADD45E2CC544F100303ECB /* Sparkle */; };
-		E1E0F4262CC7FF300005EE87 /* whisper in Frameworks */ = {isa = PBXBuildFile; productRef = E1E0F4252CC7FF300005EE87 /* whisper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 				E19E53B52D36D8660067F3D4 /* libggml-metal.dylib in CopyFiles */,
 				E19E53B42D36D85B0067F3D4 /* libggml-blas.dylib in CopyFiles */,
 				E19E53B32D36D84A0067F3D4 /* libggml-cpu.dylib in CopyFiles */,
+				422B44FE2D8A518600947F25 /* whisper.framework in CopyFiles */,
 				E19E53B22D36D82F0067F3D4 /* libwhisper.1.dylib in CopyFiles */,
 				E19E53B12D36D8200067F3D4 /* libggml-base.dylib in CopyFiles */,
 				E19E53B02D36D8120067F3D4 /* libggml.dylib in CopyFiles */,
@@ -55,6 +57,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		422B44FA2D8A496B00947F25 /* whisper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = whisper.framework; path = "../whisper.cpp/build-macos/framework/whisper.framework"; sourceTree = "<group>"; };
+		422BF1002D8A566F00947F25 /* whisper.objc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whisper.objc.xcodeproj; sourceTree = "<group>"; };
+		422BF11B2D8A566F00947F25 /* whisper.swiftui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whisper.swiftui.xcodeproj; sourceTree = "<group>"; };
+		428D38382D8A5B40003DB4EA /* whisper.objc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whisper.objc.xcodeproj; sourceTree = "<group>"; };
+		428D38532D8A5B40003DB4EA /* whisper.swiftui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whisper.swiftui.xcodeproj; sourceTree = "<group>"; };
 		E11473B02CBE0F0A00318EE4 /* VoiceInk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceInk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11473C32CBE0F0B00318EE4 /* VoiceInkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceInkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11473CD2CBE0F0B00318EE4 /* VoiceInkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceInkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,10 +73,15 @@
 		E19E53AC2D36D7EF0067F3D4 /* libwhisper.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libwhisper.dylib; path = /usr/local/lib/libwhisper.dylib; sourceTree = "<absolute>"; };
 		E19E53AD2D36D7EF0067F3D4 /* libwhisper.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libwhisper.1.dylib; path = /usr/local/lib/libwhisper.1.dylib; sourceTree = "<absolute>"; };
 		E19E53AE2D36D7EF0067F3D4 /* libwhisper.1.7.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libwhisper.1.7.4.dylib; path = /usr/local/lib/libwhisper.1.7.4.dylib; sourceTree = "<absolute>"; };
-		E1E0F4242CC7FF2A0005EE87 /* whisper.cpp */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = whisper.cpp; path = /Users/beingpax/whisper.cpp; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		428D3B472D8A5B40003DB4EA /* whisper.cpp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = whisper.cpp;
+			path = /Users/alexandre.mendonca/whisper.cpp;
+			sourceTree = "<absolute>";
+		};
 		E11473B22CBE0F0A00318EE4 /* VoiceInk */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VoiceInk;
@@ -93,9 +105,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1ADD45A2CC5352A00303ECB /* LaunchAtLogin in Frameworks */,
-				E1E0F4262CC7FF300005EE87 /* whisper in Frameworks */,
 				E1ADD45F2CC544F100303ECB /* Sparkle in Frameworks */,
 				E1A261122CC143AC00B233D1 /* KeyboardShortcuts in Frameworks */,
+				422B44FD2D8A518600947F25 /* whisper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +128,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		422BF4102D8A566F00947F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		422BF4122D8A566F00947F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428D3B482D8A5B40003DB4EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428D3B4A2D8A5B40003DB4EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E11473A72CBE0F0A00318EE4 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +164,7 @@
 				E11473D02CBE0F0B00318EE4 /* VoiceInkUITests */,
 				E114741C2CBE1DE200318EE4 /* Frameworks */,
 				E11473B12CBE0F0A00318EE4 /* Products */,
-				E1E0F4242CC7FF2A0005EE87 /* whisper.cpp */,
+				428D3B472D8A5B40003DB4EA /* whisper.cpp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +181,7 @@
 		E114741C2CBE1DE200318EE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				422B44FA2D8A496B00947F25 /* whisper.framework */,
 				E19E53A72D36D7EF0067F3D4 /* libggml.dylib */,
 				E19E53A82D36D7EF0067F3D4 /* libggml-base.dylib */,
 				E19E53A92D36D7EF0067F3D4 /* libggml-blas.dylib */,
@@ -177,7 +218,6 @@
 				E1A261112CC143AC00B233D1 /* KeyboardShortcuts */,
 				E1ADD4592CC5352A00303ECB /* LaunchAtLogin */,
 				E1ADD45E2CC544F100303ECB /* Sparkle */,
-				E1E0F4252CC7FF300005EE87 /* whisper */,
 			);
 			productName = VoiceInk;
 			productReference = E11473B02CBE0F0A00318EE4 /* VoiceInk.app */;
@@ -269,6 +309,24 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E11473B12CBE0F0A00318EE4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 422BF4122D8A566F00947F25 /* Products */;
+					ProjectRef = 422BF1002D8A566F00947F25 /* whisper.objc.xcodeproj */;
+				},
+				{
+					ProductGroup = 428D3B482D8A5B40003DB4EA /* Products */;
+					ProjectRef = 428D38382D8A5B40003DB4EA /* whisper.objc.xcodeproj */;
+				},
+				{
+					ProductGroup = 422BF4102D8A566F00947F25 /* Products */;
+					ProjectRef = 422BF11B2D8A566F00947F25 /* whisper.swiftui.xcodeproj */;
+				},
+				{
+					ProductGroup = 428D3B4A2D8A5B40003DB4EA /* Products */;
+					ProjectRef = 428D38532D8A5B40003DB4EA /* whisper.swiftui.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E11473AF2CBE0F0A00318EE4 /* VoiceInk */,
@@ -470,21 +528,259 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 112;
 				DEVELOPMENT_ASSET_PATHS = "\"VoiceInk/Preview Content\"";
-				DEVELOPMENT_TEAM = V6J6A3VWY2;
+				DEVELOPMENT_TEAM = 5PSUPZFFKL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/framework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = VoiceInk/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = VoiceInk;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "VoiceInk needs to interact with your browser to detect the current website for applying website-specific configurations.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceInk needs access to your microphone to record audio for transcription.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+					"\"import Foundation\"",
+					"\"#if canImport(whisper)\"",
+					"\"import whisper\"",
+					"#else",
+					"\"#error(\\\"Unable to import whisper module. Please check your project configuration.\\\")\"",
+					"#endif",
+					"\"import os\"",
+					"\"enum WhisperError: Error {\"",
+					"\"    case couldNotInitializeContext\"",
+					"}",
+					"\"// Meet Whisper C++ constraint: Don't access from more than one thread at a time.\"",
+					"\"actor WhisperContext {\"",
+					"\"    private var context: OpaquePointer?\"",
+					"\"    private var languageCString: [CChar]?\"",
+					"\"    private var prompt: String?\"",
+					"\"    private var promptCString: [CChar]?\"",
+					"\"    private let logger = Logger(subsystem: \\\"com.prakashjoshipax.voiceink\\\", category: \\\"WhisperContext\\\")\"",
+					"\"    private init() {\"",
+					"\"        // Private initializer without context\"",
+					"\"    }\"",
+					"\"    init(context: OpaquePointer) {\"",
+					"\"        self.context = context\"",
+					"\"    }\"",
+					"\"    deinit {\"",
+					"\"        if let context = context {\"",
+					"\"            whisper_free(context)\"",
+					"\"        }\"",
+					"\"    }\"",
+					"\"    func fullTranscribe(samples: [Float]) {\"",
+					"\"        guard let context = context else { return }\"",
+					"\"        \"",
+					"\"        // Leave 2 processors free (i.e. the high-efficiency cores).\"",
+					"\"        let maxThreads = max(1, min(8, cpuCount() - 2))\"",
+					"\"        var params = whisper_full_default_params(WHISPER_SAMPLING_GREEDY)\"",
+					"\"        \"",
+					"\"        // Read language directly from UserDefaults\"",
+					"\"        let selectedLanguage = UserDefaults.standard.string(forKey: \\\"SelectedLanguage\\\") ?? \\\"auto\\\"\"",
+					"\"        if selectedLanguage != \\\"auto\\\" {\"",
+					"\"            languageCString = Array(selectedLanguage.utf8CString)\"",
+					"\"            params.language = languageCString?.withUnsafeBufferPointer { ptr in\"",
+					"\"                ptr.baseAddress\"",
+					"\"            }\"",
+					"\"            logger.notice(\\\"🌐 Using language: \\\\(selectedLanguage)\\\")\"",
+					"\"        } else {\"",
+					"\"            languageCString = nil\"",
+					"\"            params.language = nil\"",
+					"\"            logger.notice(\\\"🌐 Using auto language detection\\\")\"",
+					"\"        }\"",
+					"\"        \"",
+					"\"        // Only use prompt for English language\"",
+					"\"        if selectedLanguage == \\\"en\\\" && prompt != nil {\"",
+					"\"            promptCString = Array(prompt!.utf8CString)\"",
+					"\"            params.initial_prompt = promptCString?.withUnsafeBufferPointer { ptr in\"",
+					"\"                ptr.baseAddress\"",
+					"\"            }\"",
+					"\"            logger.notice(\\\"💬 Using prompt for transcription\\\")\"",
+					"\"        } else {\"",
+					"\"            promptCString = nil\"",
+					"\"            params.initial_prompt = nil\"",
+					"\"        }\"",
+					"\"        \"",
+					"\"        // Adapted from whisper.objc\"",
+					"\"        params.print_realtime   = true\"",
+					"\"        params.print_progress   = false\"",
+					"\"        params.print_timestamps = true\"",
+					"\"        params.print_special    = false\"",
+					"\"        params.translate        = false\"",
+					"\"        params.n_threads        = Int32(maxThreads)\"",
+					"\"        params.offset_ms        = 0\"",
+					"\"        params.no_context       = true\"",
+					"\"        params.single_segment   = false\"",
+					"\"        \"",
+					"\"        // Adjusted parameters to reduce hallucination\"",
+					"\"        params.suppress_blank   = true      // Keep suppressing blank outputs\"",
+					"\"        params.suppress_nst     = true      // Additional suppression of non-speech tokens\"",
+					"\"        whisper_reset_timings(context)\"",
+					"\"        logger.notice(\\\"⚙️ Starting whisper transcription\\\")\"",
+					"\"        samples.withUnsafeBufferPointer { samples in\"",
+					"\"            if (whisper_full(context, params, samples.baseAddress, Int32(samples.count)) != 0) {\"",
+					"\"                logger.error(\\\"❌ Failed to run whisper model\\\")\"",
+					"\"            } else {\"",
+					"\"                // Print detected language info before timings\"",
+					"\"                let langId = whisper_full_lang_id(context)\"",
+					"\"                let detectedLang = String(cString: whisper_lang_str(langId))\"",
+					"\"                logger.notice(\\\"✅ Transcription completed - Language: \\\\(detectedLang)\\\")\"",
+					"\"                whisper_print_timings(context)\"",
+					"\"            }\"",
+					"\"        }\"",
+					"\"        \"",
+					"\"        languageCString = nil\"",
+					"\"        promptCString = nil\"",
+					"\"    }\"",
+					"\"    func getTranscription() -> String {\"",
+					"\"        guard let context = context else { return \\\"\\\" }\"",
+					"\"        var transcription = \\\"\\\"\"",
+					"\"        for i in 0..<whisper_full_n_segments(context) {\"",
+					"\"            transcription += String(cString: whisper_full_get_segment_text(context, i))\"",
+					"\"        }\"",
+					"\"        return transcription\"",
+					"\"    }\"",
+					"\"    static func createContext(path: String) async throws -> WhisperContext {\"",
+					"\"        // Create empty context first\"",
+					"\"        let whisperContext = WhisperContext()\"",
+					"\"        \"",
+					"\"        // Initialize the context within the actor's isolated context\"",
+					"\"        try await whisperContext.initializeModel(path: path)\"",
+					"\"        \"",
+					"\"        return whisperContext\"",
+					"\"    }\"",
+					"\"    \"",
+					"\"    private func initializeModel(path: String) throws {\"",
+					"\"        var params = whisper_context_default_params()\"",
+					"\"        #if targetEnvironment(simulator)\"",
+					"\"        params.use_gpu = false\"",
+					"\"        logger.notice(\\\"🖥️ Running on simulator, using CPU\\\")\"",
+					"\"        #endif\"",
+					"\"        \"",
+					"\"        let context = whisper_init_from_file_with_params(path, params)\"",
+					"\"        if let context {\"",
+					"\"            self.context = context\"",
+					"\"        } else {\"",
+					"\"            logger.error(\\\"❌ Couldn't load model at \\\\(path)\\\")\"",
+					"\"            throw WhisperError.couldNotInitializeContext\"",
+					"\"        }\"",
+					"\"    }\"",
+					"\"    func releaseResources() {\"",
+					"\"        if let context = context {\"",
+					"\"            whisper_free(context)\"",
+					"\"            self.context = nil\"",
+					"\"        }\"",
+					"\"        languageCString = nil\"",
+					"\"    }\"",
+					"\"    func setPrompt(_ prompt: String?) {\"",
+					"\"        self.prompt = prompt\"",
+					"\"        logger.debug(\\\"💬 Prompt set: \\\\(prompt ?? \\\"none\\\")\\\")\"",
+					"\"    }\"",
+					"}",
+					"\"fileprivate func cpuCount() -> Int {\"",
+					"\"    ProcessInfo.processInfo.processorCount\"",
+					"}",
+					/usr/local/lib,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/src/Release-appletvsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/torch/lib",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-base.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-blas.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-device/ggml/src/Release-iphoneos",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-base.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/ggml/src/ggml-metal/Release-appletvsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-metal.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-blas.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/ggml/src/Release-xrsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-device/ggml/src/Release-appletvos",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-device/src/Release-appletvos",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/ggml/src/ggml-blas/Release-xrsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/whisper.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build/ggml/src",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-cpu.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-blas.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos/ggml/src/ggml-blas/Release-xros",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-device/ggml/src/ggml-blas/Release-iphoneos",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/ggml/src/Release-iphonesimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-metal.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/src/Release-iphonesimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-blas.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-base.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-blas.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/ggml/src/ggml-metal/Release",
+					"$(PROJECT_DIR)/whisper.cpp/build/examples",
+					"$(PROJECT_DIR)/whisper.cpp/build/src",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/whisper.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-cpu.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-base.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/whisper.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/ggml/src/ggml-blas/Release-appletvsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/ggml/src/Release",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/ggml/src/Release-appletvsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos/ggml/src/Release-xros",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-metal.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/whisper.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/whisper.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-blas.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-cpu.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-device/ggml/src/ggml-metal/Release-appletvos",
+					"$(PROJECT_DIR)/whisper.cpp/build/ggml/src/ggml-blas",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/ggml/src/ggml-blas/Release",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-device/src/Release-iphoneos",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/src/Release-xrsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-metal.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-cpu.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-metal.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/ggml/src/ggml-metal/Release-iphonesimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-base.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-cpu.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-device/ggml/src/ggml-blas/Release-appletvos",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-cpu.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-metal.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/ggml/src/ggml-metal/Release-xrsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/src/Release",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-device/ggml/src/ggml-metal/Release-iphoneos",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-metal.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-base.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-blas.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/whisper.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/ggml/src/ggml-blas/Release-iphonesimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/whisper.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/whisper.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-cpu.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-cpu.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-metal.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-base.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos/ggml/src/ggml-metal/Release-xros",
+					"$(PROJECT_DIR)/whisper.cpp/build/ggml/src/ggml-metal",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos/src/Release-xros",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-base.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/safetensors",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/tokenizers",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-blas.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.prakashjoshipax.VoiceInk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrekm.VoiceInk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -503,21 +799,259 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 112;
 				DEVELOPMENT_ASSET_PATHS = "\"VoiceInk/Preview Content\"";
-				DEVELOPMENT_TEAM = V6J6A3VWY2;
+				DEVELOPMENT_TEAM = 5PSUPZFFKL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/framework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = VoiceInk/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = VoiceInk;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = NO;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "VoiceInk needs to interact with your browser to detect the current website for applying website-specific configurations.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "VoiceInk needs access to your microphone to record audio for transcription.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
+					"\"import Foundation\"",
+					"\"#if canImport(whisper)\"",
+					"\"import whisper\"",
+					"#else",
+					"\"#error(\\\"Unable to import whisper module. Please check your project configuration.\\\")\"",
+					"#endif",
+					"\"import os\"",
+					"\"enum WhisperError: Error {\"",
+					"\"    case couldNotInitializeContext\"",
+					"}",
+					"\"// Meet Whisper C++ constraint: Don't access from more than one thread at a time.\"",
+					"\"actor WhisperContext {\"",
+					"\"    private var context: OpaquePointer?\"",
+					"\"    private var languageCString: [CChar]?\"",
+					"\"    private var prompt: String?\"",
+					"\"    private var promptCString: [CChar]?\"",
+					"\"    private let logger = Logger(subsystem: \\\"com.prakashjoshipax.voiceink\\\", category: \\\"WhisperContext\\\")\"",
+					"\"    private init() {\"",
+					"\"        // Private initializer without context\"",
+					"\"    }\"",
+					"\"    init(context: OpaquePointer) {\"",
+					"\"        self.context = context\"",
+					"\"    }\"",
+					"\"    deinit {\"",
+					"\"        if let context = context {\"",
+					"\"            whisper_free(context)\"",
+					"\"        }\"",
+					"\"    }\"",
+					"\"    func fullTranscribe(samples: [Float]) {\"",
+					"\"        guard let context = context else { return }\"",
+					"\"        \"",
+					"\"        // Leave 2 processors free (i.e. the high-efficiency cores).\"",
+					"\"        let maxThreads = max(1, min(8, cpuCount() - 2))\"",
+					"\"        var params = whisper_full_default_params(WHISPER_SAMPLING_GREEDY)\"",
+					"\"        \"",
+					"\"        // Read language directly from UserDefaults\"",
+					"\"        let selectedLanguage = UserDefaults.standard.string(forKey: \\\"SelectedLanguage\\\") ?? \\\"auto\\\"\"",
+					"\"        if selectedLanguage != \\\"auto\\\" {\"",
+					"\"            languageCString = Array(selectedLanguage.utf8CString)\"",
+					"\"            params.language = languageCString?.withUnsafeBufferPointer { ptr in\"",
+					"\"                ptr.baseAddress\"",
+					"\"            }\"",
+					"\"            logger.notice(\\\"🌐 Using language: \\\\(selectedLanguage)\\\")\"",
+					"\"        } else {\"",
+					"\"            languageCString = nil\"",
+					"\"            params.language = nil\"",
+					"\"            logger.notice(\\\"🌐 Using auto language detection\\\")\"",
+					"\"        }\"",
+					"\"        \"",
+					"\"        // Only use prompt for English language\"",
+					"\"        if selectedLanguage == \\\"en\\\" && prompt != nil {\"",
+					"\"            promptCString = Array(prompt!.utf8CString)\"",
+					"\"            params.initial_prompt = promptCString?.withUnsafeBufferPointer { ptr in\"",
+					"\"                ptr.baseAddress\"",
+					"\"            }\"",
+					"\"            logger.notice(\\\"💬 Using prompt for transcription\\\")\"",
+					"\"        } else {\"",
+					"\"            promptCString = nil\"",
+					"\"            params.initial_prompt = nil\"",
+					"\"        }\"",
+					"\"        \"",
+					"\"        // Adapted from whisper.objc\"",
+					"\"        params.print_realtime   = true\"",
+					"\"        params.print_progress   = false\"",
+					"\"        params.print_timestamps = true\"",
+					"\"        params.print_special    = false\"",
+					"\"        params.translate        = false\"",
+					"\"        params.n_threads        = Int32(maxThreads)\"",
+					"\"        params.offset_ms        = 0\"",
+					"\"        params.no_context       = true\"",
+					"\"        params.single_segment   = false\"",
+					"\"        \"",
+					"\"        // Adjusted parameters to reduce hallucination\"",
+					"\"        params.suppress_blank   = true      // Keep suppressing blank outputs\"",
+					"\"        params.suppress_nst     = true      // Additional suppression of non-speech tokens\"",
+					"\"        whisper_reset_timings(context)\"",
+					"\"        logger.notice(\\\"⚙️ Starting whisper transcription\\\")\"",
+					"\"        samples.withUnsafeBufferPointer { samples in\"",
+					"\"            if (whisper_full(context, params, samples.baseAddress, Int32(samples.count)) != 0) {\"",
+					"\"                logger.error(\\\"❌ Failed to run whisper model\\\")\"",
+					"\"            } else {\"",
+					"\"                // Print detected language info before timings\"",
+					"\"                let langId = whisper_full_lang_id(context)\"",
+					"\"                let detectedLang = String(cString: whisper_lang_str(langId))\"",
+					"\"                logger.notice(\\\"✅ Transcription completed - Language: \\\\(detectedLang)\\\")\"",
+					"\"                whisper_print_timings(context)\"",
+					"\"            }\"",
+					"\"        }\"",
+					"\"        \"",
+					"\"        languageCString = nil\"",
+					"\"        promptCString = nil\"",
+					"\"    }\"",
+					"\"    func getTranscription() -> String {\"",
+					"\"        guard let context = context else { return \\\"\\\" }\"",
+					"\"        var transcription = \\\"\\\"\"",
+					"\"        for i in 0..<whisper_full_n_segments(context) {\"",
+					"\"            transcription += String(cString: whisper_full_get_segment_text(context, i))\"",
+					"\"        }\"",
+					"\"        return transcription\"",
+					"\"    }\"",
+					"\"    static func createContext(path: String) async throws -> WhisperContext {\"",
+					"\"        // Create empty context first\"",
+					"\"        let whisperContext = WhisperContext()\"",
+					"\"        \"",
+					"\"        // Initialize the context within the actor's isolated context\"",
+					"\"        try await whisperContext.initializeModel(path: path)\"",
+					"\"        \"",
+					"\"        return whisperContext\"",
+					"\"    }\"",
+					"\"    \"",
+					"\"    private func initializeModel(path: String) throws {\"",
+					"\"        var params = whisper_context_default_params()\"",
+					"\"        #if targetEnvironment(simulator)\"",
+					"\"        params.use_gpu = false\"",
+					"\"        logger.notice(\\\"🖥️ Running on simulator, using CPU\\\")\"",
+					"\"        #endif\"",
+					"\"        \"",
+					"\"        let context = whisper_init_from_file_with_params(path, params)\"",
+					"\"        if let context {\"",
+					"\"            self.context = context\"",
+					"\"        } else {\"",
+					"\"            logger.error(\\\"❌ Couldn't load model at \\\\(path)\\\")\"",
+					"\"            throw WhisperError.couldNotInitializeContext\"",
+					"\"        }\"",
+					"\"    }\"",
+					"\"    func releaseResources() {\"",
+					"\"        if let context = context {\"",
+					"\"            whisper_free(context)\"",
+					"\"            self.context = nil\"",
+					"\"        }\"",
+					"\"        languageCString = nil\"",
+					"\"    }\"",
+					"\"    func setPrompt(_ prompt: String?) {\"",
+					"\"        self.prompt = prompt\"",
+					"\"        logger.debug(\\\"💬 Prompt set: \\\\(prompt ?? \\\"none\\\")\\\")\"",
+					"\"    }\"",
+					"}",
+					"\"fileprivate func cpuCount() -> Int {\"",
+					"\"    ProcessInfo.processInfo.processorCount\"",
+					"}",
+					/usr/local/lib,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/src/Release-appletvsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/torch/lib",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-base.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-blas.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-device/ggml/src/Release-iphoneos",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-base.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/ggml/src/ggml-metal/Release-appletvsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-metal.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-blas.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/ggml/src/Release-xrsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-device/ggml/src/Release-appletvos",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-device/src/Release-appletvos",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/ggml/src/ggml-blas/Release-xrsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/whisper.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build/ggml/src",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-cpu.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-blas.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos/ggml/src/ggml-blas/Release-xros",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-device/ggml/src/ggml-blas/Release-iphoneos",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/ggml/src/Release-iphonesimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-metal.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/src/Release-iphonesimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-blas.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-base.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-blas.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/ggml/src/ggml-metal/Release",
+					"$(PROJECT_DIR)/whisper.cpp/build/examples",
+					"$(PROJECT_DIR)/whisper.cpp/build/src",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/whisper.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-cpu.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-base.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/whisper.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/ggml/src/ggml-blas/Release-appletvsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/ggml/src/Release",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/ggml/src/Release-appletvsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos/ggml/src/Release-xros",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-metal.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/whisper.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/whisper.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-blas.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-cpu.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-device/ggml/src/ggml-metal/Release-appletvos",
+					"$(PROJECT_DIR)/whisper.cpp/build/ggml/src/ggml-blas",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/ggml/src/ggml-blas/Release",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-device/src/Release-iphoneos",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/src/Release-xrsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-metal.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-cpu.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-metal.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/ggml/src/ggml-metal/Release-iphonesimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-base.build/Release-appletvsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-cpu.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-device/ggml/src/ggml-blas/Release-appletvos",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-cpu.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml-metal.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/ggml/src/ggml-metal/Release-xrsimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-tvos-sim/build/ggml.build/Release-appletvsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/src/Release",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-device/ggml/src/ggml-metal/Release-iphoneos",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-metal.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-base.build/Release-xrsimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-blas.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/whisper.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/ggml/src/ggml-blas/Release-iphonesimulator",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/whisper.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/whisper.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-cpu.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-cpu.build/Release-iphonesimulator/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos-sim/build/ggml-metal.build/Release-xrsimulator/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-base.build/Release/Objects-normal/x86_64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos/ggml/src/ggml-metal/Release-xros",
+					"$(PROJECT_DIR)/whisper.cpp/build/ggml/src/ggml-metal",
+					"$(PROJECT_DIR)/whisper.cpp/build-visionos/src/Release-xros",
+					"$(PROJECT_DIR)/whisper.cpp/build-macos/build/ggml-base.build/Release/Objects-normal/arm64/Binary",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/safetensors",
+					"$(PROJECT_DIR)/whisper.cpp/.venv/lib/python3.13/site-packages/tokenizers",
+					"$(PROJECT_DIR)/whisper.cpp/build-ios-sim/build/ggml-blas.build/Release-iphonesimulator/Objects-normal/arm64/Binary",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.prakashjoshipax.VoiceInk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrekm.VoiceInk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -675,10 +1209,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E1ADD45D2CC544F100303ECB /* XCRemoteSwiftPackageReference "Sparkle" */;
 			productName = Sparkle;
-		};
-		E1E0F4252CC7FF300005EE87 /* whisper */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = whisper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
