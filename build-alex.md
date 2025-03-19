@@ -13,3 +13,8 @@ and also drag and drop the .dylib from whisper.cpp/build/src/**.dylib here in "B
 
 
 drag the whisper folder under the project
+
+
+
+
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/d7682690-3ab9-4717-afa4-679597af0e89" />
